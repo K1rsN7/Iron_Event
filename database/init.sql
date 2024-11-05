@@ -3,7 +3,8 @@
 -- Host: 127.0.0.1    Database: javafxTest
 -- ------------------------------------------------------
 -- Server version	8.0.32
-
+CREATE DATABASE IF NOT EXISTS `javafxTest`;
+USE `javafxTest`;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -22,19 +23,7 @@
 DROP TABLE IF EXISTS `athletes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `athletes` (
-  `idAthletes` int NOT NULL AUTO_INCREMENT,
-  `FIO` varchar(100) NOT NULL,
-  `birth_date` date NOT NULL,
-  `birth_country` varchar(100) NOT NULL,
-  `image` varchar(100) DEFAULT NULL,
-  `biography` text,
-  `Users_idUsers` int NOT NULL,
-  PRIMARY KEY (`idAthletes`),
-  UNIQUE KEY `FIO_UNIQUE` (`FIO`),
-  KEY `fk_Athletes_Users1_idx` (`Users_idUsers`),
-  CONSTRAINT `fk_Athletes_Users1` FOREIGN KEY (`Users_idUsers`) REFERENCES `users` (`idUsers`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
+wo
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
