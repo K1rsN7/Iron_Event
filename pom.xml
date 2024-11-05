@@ -63,6 +63,13 @@
             <artifactId>javafx-graphics</artifactId>
             <version>19</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version> <!-- Use the latest version available -->
+        </dependency>
+
+        
     </dependencies>
 
     <build>
