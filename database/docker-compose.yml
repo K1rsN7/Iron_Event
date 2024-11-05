@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  mariadb:
+    image: mysql:8.0 # mariadb:11.5.2
+    ports:
+      - "13306:3306"
+    command:
+      --init-file /data/application/init.sql
+    environment:
+      MYSQL_ROOT_USER: javafxTest
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_DATABASE: javafxTest
+      MYSQL_USER: javafxTest
+      MYSQL_PASSWORD: changeme
+    volumes:
+      - ${PWD}/mariadb:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
+
+    # network_mode: "host"
