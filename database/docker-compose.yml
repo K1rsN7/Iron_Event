@@ -1,19 +1,19 @@
-version: '3.6'
-services:
+version: '3.6' # Версия Docker Compose
+services: 
   mariadb:
-    image: mysql:8.0 # mariadb:11.5.2
+    image: mysql:8.0 
     ports:
-      - "13306:3306"
+      - "13306:3306" # Пробрасывание порта 3306 контейнера на порт 13306
     command:
-      --init-file /data/application/init.sql
-    environment:
-      MYSQL_ROOT_USER: javafxTest
+      --init-file /data/application/init.sql # Команда при запуске 
+    environment: # Переменные окружения
+      MYSQL_ROOT_USER: javafxTest 
       MYSQL_ROOT_PASSWORD: changeme
       MYSQL_DATABASE: javafxTest
       MYSQL_USER: javafxTest
       MYSQL_PASSWORD: changeme
     volumes:
-      - ${PWD}/mariadb:/var/lib/mysql
-      - ./init.sql:/data/application/init.sql
+      - ${PWD}/mariadb:/var/lib/mysql # Монтирование локальной директории для хранения данных в БД
+      - ./init.sql:/data/application/init.sql # Монтирование локального файла для инициализации БД
 
-    # network_mode: "host"
+    # network_mode: "host" # Если понадобится, то использование контейнера в режиме сети хоста
