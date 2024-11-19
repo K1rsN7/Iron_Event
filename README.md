@@ -3,6 +3,17 @@
   <div align='center'> 
     <h1>УП02: Учебная практика по интеграции программных модулей</h1> 
   </div> 
+  <div align="center">
+  <a href="https://github.com/K1rsN7/UP02/issues">
+		<img src="https://img.shields.io/github/issues/K1rsN7/UP02?color=0F100F&labelColor=1C2325&style=for-the-badge">
+	</a>
+	<a href="https://github.com/K1rsN7/UP02/stargazers">
+		<img src="https://img.shields.io/github/stars/K1rsN7/UP02?color=0F100F&labelColor=1C2325&style=for-the-badge">
+	</a>
+	<a href="./LICENSE">
+		<img src="https://img.shields.io/github/license/K1rsN7/UP02?color=0F100F&labelColor=1C2325&style=for-the-badge">
+	</a>
+</div>
    <a>Практика посвящена модулю ПМ02 "Осуществление интеграции программных модулей".<br> Тема моего проекта: "Проектирование и разработка базы данных для спортивных соревнований".</a> <a>Код программы был взят с моего старого репозитория на GitHub: 
    <a href="https://github.com/K1rsN7/Competition-organization">Competition-organization</a>.
    </a>
