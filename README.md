@@ -43,3 +43,11 @@
     <li>После успешного запуска сервера запустите программу.</li> </ol> </a>
     
 </div>
+<h2 align="center"> Star History</h2>
+<a href="https://star-history.com/#K1rsN7/Iron_Event&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=K1rsN7/Iron_Event&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=K1rsN7/Iron_Event&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=K1rsN7/SubManage&type=Date" />
+ </picture>
+</a>
